@@ -40,7 +40,7 @@ module.exports = app => {
             } else {
                 const formattedData = result.records.map(sessionRecord => {
                     let speakers = [];
-                    if(sessionRecord.Session_Speakers__r){
+                    if (sessionRecord.Session_Speakers__r) {
                         speakers = sessionRecord.Session_Speakers__r.records.map(
                             record => {
                                 return {
